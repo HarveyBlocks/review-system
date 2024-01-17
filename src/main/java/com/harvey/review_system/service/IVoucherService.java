@@ -1,0 +1,20 @@
+package com.harvey.review_system.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.harvey.review_system.dto.Result;
+import com.harvey.review_system.entity.Voucher;
+
+/**
+ * <p>
+ *  服务类
+ * </p>
+ *
+ * @author 虎哥
+ * @since 2021-12-22
+ */
+public interface IVoucherService extends IService<Voucher> {
+
+    Result queryVoucherOfShop(Long shopId);
+
+    void addSeckillVoucher(Voucher voucher);
+}
